@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    color: #333;
+}
+
+.nav{
+    padding: 15px 50px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    
+}
+.menu--nav {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.nav--link {
+    color: #333;
+}
