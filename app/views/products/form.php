@@ -8,7 +8,7 @@
     <title>Ventas | sistema de punto de venta web</title>
     <link rel="stylesheet" href="../app/assets/css/styles.css">
 
-    
+
 </head>
 
 
@@ -56,6 +56,38 @@
                             <div class="group--form">
                                 <label for="code">Código</label>
                                 <input type="text" class="input" placeholder="Código...">
+                            </div>
+                            <div class="group--form">
+                                <label for="name">Nombre</label>
+                                <input type="text" class="input" placeholder="Nombre...">
+                            </div>
+                            <div class="group--form">
+                                <label for="descripcion">Descripción</label>
+                                <input type="text" class="input" placeholder="Descripción...">
+                            </div>
+                            <div class="group--form">
+                                <label for="categoria">Categoría</label>
+
+                                <select name="categoria" id="categoria" class="input" class="input">
+                                    <?php require_once "./app/views/products/categorias_options.php"?>
+                                </select>
+                            </div>
+
+                            <div class="group--h">
+                                <div class="group--form">
+                                    <label for="price_u">Precio Unitario</label>
+                                    <input type="number" step="any" min="0" class="input" value="0">
+                                </div>
+                                <div class="group--form">
+                                    <label for="price_p">Precio Proveedor</label>
+                                    <input type="number" step="any" min="0" class="input" value="0">
+                                </div>
+                            </div>
+
+
+
+                            <div class="buttons">
+                                <button class="btn">Guardar</button>
                             </div>
                         </form>
                     </div>
