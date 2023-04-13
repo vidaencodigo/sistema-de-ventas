@@ -14,6 +14,11 @@ class Categoria extends Crud
     }
     public function get_all_active($estatus)
     {
+        /**
+         * lista las categorias activas 
+         * unicamente. Diferente a get_all()
+         * que lista todas las registradas.
+         */
         try {
             $query = "SELECT * FROM " . self::TABLE . " WHERE estatus=?";
             $stm = $this->pdo->prepare($query);

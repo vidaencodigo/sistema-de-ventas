@@ -11,9 +11,8 @@ class ProductController
     }
     public function get_form()
     {
-        $categorias = CategoriasController::get_all_categorias();
+        // formulario de registro de producto
+        $categorias = CategoriasController::get_active_categorias();
         require_once  $this->views  . "/form.php";
     }
-
-  
 }

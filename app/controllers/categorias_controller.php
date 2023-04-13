@@ -11,7 +11,7 @@ class CategoriasController
         $this->views = "./app/views/";
     }
 
-    static function get_all_categorias(){
+    static function get_active_categorias(){
         // acceso a categorias por metodo estatico
         $categorias = new Categoria();
         return $categorias->get_all_active("active");
