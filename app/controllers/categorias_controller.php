@@ -14,6 +14,6 @@ class CategoriasController
     static function get_active_categorias(){
         // acceso a categorias por metodo estatico
         $categorias = new Categoria();
-        return $categorias->get_all_active("active");
+        return $categorias->get_all_active();
     }
 }

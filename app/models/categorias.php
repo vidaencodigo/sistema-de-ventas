@@ -12,7 +12,7 @@ class Categoria extends Crud
         parent::__construct(self::TABLE);
         $this->pdo = parent::connect();
     }
-    public function get_all_active($estatus)
+    public function get_all_active()
     {
         /**
          * lista las categorias activas 
@@ -22,7 +22,7 @@ class Categoria extends Crud
         try {
             $query = "SELECT * FROM " . self::TABLE . " WHERE estatus=?";
             $stm = $this->pdo->prepare($query);
-            $stm->execute([$estatus]);
+            $stm->execute(['active']);
             return $stm->fetchall(PDO::FETCH_OBJ);
         } catch (\PDOException $e) {
             echo $e->getMessage();
